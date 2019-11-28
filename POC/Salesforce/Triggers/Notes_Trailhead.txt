@@ -1,0 +1,26 @@
+A.) Apex Triggers:
+	1.) Use triggers to perform tasks that can’t be done by using the point-and-click tools in the Salesforce user interface. 
+	For example, if validating a field value or updating a field on a record, use validation rules and workflow rules instead.
+	 
+	2.) Triggers are active by default when created.
+	
+	3.) Syntax:
+			trigger TriggerName on ObjectName (trigger_events) {
+			   code_block
+			}
+			
+			The events you can specify are:
+				before insert
+				before update
+				before delete
+				after insert
+				after update
+				after delete
+				after undelete
+
+				
+				
+				
+				
+Extra:
+1.) Debug log: create, edit, open, view

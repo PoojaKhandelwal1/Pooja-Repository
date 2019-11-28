@@ -1,0 +1,17 @@
+BlackPurl:
+1.force.com setup in eclipse
+https://developer.salesforce.com/page/Force.com_IDE_Installation
+
+2.project with force.com
+window->show view->force.com
+
+file -> new ->  Force.com project 
+it will open a window 
+-Write Project name : BlackPurlUi
+-UserName : developer@newui.blackpurl.com
+-Pass : Welcome@123
+-Security Token :  mKv2iy5YiE6ewjmL0ePouvtf
+-> next -> 1st option
+->project -> right clk->prop->force.com->proj contents->
+clk on add/remove button -> ok 
+then tick kar lo jo chahiye :- obj 2 tarah ke :(classes, triggers, pages, components and static resources)

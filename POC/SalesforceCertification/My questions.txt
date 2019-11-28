@@ -1,0 +1,21 @@
+test class annotations, test for soap and rest, seealldata-true to test METHODS (code snippet get org 500 accounts), test class data preparation
+
+While test execution, exception occurs: Unable to Lock row.... WHY ?
+
+Continuation class implementation
+sosl query 1-2 questions
+
+Opportunity line item (total 10000 and created date se 30 days after) then update opportunity and related account. What should use work-flow and triggers n what object
+
+For pagination in vf page: use list view with filterId, use standardsetcontroller (next and previous), use OFFSET
+
+SOSL query return type
+
+What is JavaScript invoker (choose 2): actionfunction, actionpoller, customcomponent, 
+
+query performance: for tons of thousands records, use where condition pick-list field, now optimize query:
+WHERE status__c = 'closed', WHERE status__c IN 'new, closed', WHERE status__c != 'open', WHERE status__c LIKE '%Comp'
+
+How to return some details of accounts by rest service method: return account, return List<Account>, return Map<Id, Account>, Generic class
+
+Merge operation: which update and delete fire

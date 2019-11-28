@@ -1,0 +1,16 @@
+A. Domain creation in salesforce:
+	1.) login to salesforce
+	2.) Go to setup in right top corner near your name
+	3.) type my domain in Quick find box (in left of setup area)
+	4.) select My Domains
+	5.) clk on new 
+	6.) Add domain name
+	7.) save
+	8.) Edit Authentication Configuration (login screen properties - backgroud, logo, right frame Url)
+	9.) Change right frame url: 
+		a.) choose an image.
+		b.) Add that image in document -> (go to all tabs -> document -> New -> document name -> chk externally available -> save)
+		c.) Create visualforce page (.html):
+			* Setup -> Quick find box -> type sites -> select sites -> create sites domain
+			* Setup -> Quick find box -> type sites -> select sites -> New -> 
+			*

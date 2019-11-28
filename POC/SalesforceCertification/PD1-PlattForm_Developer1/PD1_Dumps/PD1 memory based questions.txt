@@ -1,0 +1,71 @@
+1) Start test and Stop test - Pe Question -- Used to increase governor limit 
+2) Excecution order :-  Before,Validation Rule,After, Assignment, Workflow
+3) (Trigger.ISInsert){
+dowork();
+}
+4) Which Component can be deployed using using change -set  / Ant -- 
+Ans :- Case layout and Account layout (do not chosse feed layout option )
+5) If deployment fails even your class has 95% coverage..what will you do ? Failure- coverage is less than 74%
+Ans :- We will increase the covergae of existing test classes
+6) Lighjting components/bundle mein kya aata hai ?
+Ans - Documentation and Javascript
+7) If u want to update field of lookup relationship -- toh kaise hoga ? 
+answer :- Using Process builder
+8) what workflow can do ?
+Answer :- 1) send outbound message
+2) Create task / Activity
+9) if u want to populate so and so field on update which event of trigger will fire?
+Answer :- Before Insert and Before update
+10) Cross object formula field
+Answe :- 
+1)Hidden values can be accessed, 
+2) Formula fields are created on Master-detail / lookup relatiobship
+3) upto 10 relationship it can be created.
+11) Primitive type of Currency 
+Answer :- Double
+12) if status of account is updated then how will status of opportunity is updated
+Answer :- by using Apex trigger (firing DML)
+13 ) Deployment kaise ho sakta hai ?
+Answer :- Sandbox to Sandbox and Sandbox to Production 
+14) Changeset pe Question 
+Answer :- 1) Connection hona chaiye
+2) Meta data
+kya select nahi karna :- Transfer records and second option Transfer custom seeting 
+15) before converting lead i want status to be mandatory
+Answer :- Validation Rule
+16 ) Related to sharing
+Answer -1) both inner and outer can have with sharing
+2) inner class can not be with sharing
+17) best method to include script, css, images
+Answer:- Static resource
+18) Question on Schema like how will you get the record type names and Picklist values of a field.
+Answer :- 1)Schema.object.case.getpicklist
+2) query on RT
+19) if value is updated then send detail to third party
+Answer:- workflow outbound message
+20) Question on what can be done with declarative..
+Answer:- pagelayouts, validation or worflow
+21) List view ke liye kya karoge
+Answer :- Standard set controller (querylocator wala option with limit 1)
+22) Advantages of standard set controller
+Answer :- 1) pagination 2) dml on bulk of records - update on list ek saath
+23) what is not allowed
+Answer:- loop mein query and single dml is not allowed in loop
+24) Warehouse question about the relationship
+ans : one to many
+25) Use of developer console
+ans : execute ananymous, view logs..
+26) related to SOSL
+ans : list of list of sobject
+27) boolean inheritance
+ans : Object
+28) standard field when insert a new contact
+ans : LastName
+29) use of lightening component
+ans : event driven...responsive
+30) run Test class 
+ans : Test execution and developer console
+
+
+
+

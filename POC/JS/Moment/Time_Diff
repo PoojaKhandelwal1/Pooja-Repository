@@ -1,0 +1,20 @@
+var datetimeA = moment("02/14/2018" + " " + "1:00 AM").format('MM/DD/YYYY h:mm A');
+console.log(datetimeA);
+var datetimeB = moment("02/14/2018" + " " + "1:05 AM").format('MM/DD/YYYY h:mm A');
+console.log(datetimeB);
+
+var datetimeA = moment("02/14/2018" + " " + "1:00 AM");
+var datetimeB = moment("02/14/2018" + " " + "1:05 AM");
+var diff = datetimeB.diff(datetimeA, 'minutes'); =5
+var totalHours = (diff/60); = 0.0833333
+
+var timeOut = moment("1:05 AM","h:mm A");
+console.log(timeOut);
+var timeIn = moment("1:00 AM","h:mm A");
+console.log(timeIn);
+var timeDiff = timeOut.diff(timeIn, 'minutes');
+console.log(timeDiff);
+var totalHours = (timeDiff/60);
+console.log(totalHours);
+var actualValue = Math.round(totalHours * 100) / 100;
+console.log(actualValue);

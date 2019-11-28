@@ -1,0 +1,189 @@
+
+
+1
+Which is true about social accounts:
+a) you can use social accounts data even when you are not logged into the social account.
+b) you need a personal social account in order to see social account data
+c) you can use social accounts to import data into salesforce
+d) connection to social account is established thru a company wide “named principal”
+
+2 You want to use an External Data Object Table from Heroku carrying Product Category information. The data need to be included in Salesforce and searchable. What do you have to do before you can use the connection (choose two):
+a) press “validate and sync”
+b) choose “include in Salesforce searches” option
+c) choose “include as index field”
+d) choose the URL
+
+3 Person Accounts (choose two):
+a) do use space in both account and contacts table
+b) have the same icon as Business accounts
+c) can only be merged with other person accounts
+d) are enabled by default
+e) are enabled via feature license
+
+4 Universal containers wants to rollout new product bundles with several pricing options. Pricing options include product-price bundles, account specific pricing and more. Which product satisfies the needs: (choose 1)
+a) Custom Appexchange-app for product-pricing
+b) Workflow on Opportunity/Opportunity Product
+c) Formula fields on Opportunity/Opportunity Product
+d) Lightning process builder
+
+5 Which components can be added to a lightning app on custom Object: (choose 3)
+a) Visualforce
+b) Standard Lightning component
+c) Custom lightning component
+d) global actions
+e) object specific actions on the custom object
+
+6 Object specific actions can not be added. Visualforce need to be embedded into a Ligthning page.
+Universal containers has a custom object “service” which has a lookup relationship to Account. Universal containers wants to enhance Salesforce1 with an action that allows account managers to enter a new service to an Account while looking at the account. (Choose one):
+a) enter a object specific action to Account and put it in the Account Layout
+b) enter a object specific action to Service and put it in the Account Layout
+c) enter a object specific action to Service and put it in the Service Layout
+d) enter a object specific action to Account and put it in the Service Layout
+
+7 Universal containers has included its orders as an external data object into Salesforce. You want to create a relationship between Accounts and the Orders object (one-to-many relationship) leveraging a key field for account which is on both external object and Account. Which relationship do you create:
+a) Lookup Relationship
+b) Master Detail Relationship
+c) Hierarchical Relationship
+d) external Lookup Relationship
+e) indirect Lookup Relationship
+
+
+——-
+
+Index
+
+1 b)
+2 a) b)
+3 a) c) <- corrected 4 d) 5 b) c) d) 6 a) 7 e)
+______________________________________________________________________________________________________
+
+1
+Which is true about social accounts:
+a) you can use social accounts data even when you are not logged into the social account.
+b) you need a personal social account in order to see social account data
+c) you can use social accounts to import data into salesforce
+d) connection to social account is established thru a company wide “named principal”
+
+2 You want to use an External Data Object Table from Heroku carrying Product Category information. The data need to be included in Salesforce and searchable. What do you have to do before you can use the connection (choose two):
+a) press “validate and sync”
+b) choose “include in Salesforce searches” option
+c) choose “include as index field”
+d) URL / choose the URL (?)
+
+3 Person Accounts (choose two):
+a) do use space in both account and contacts table
+b) have the same icon as Business accounts
+c) can only be merged with other person accounts
+d) are enabled by default
+e) are enabled via feature license
+
+4 Universal containers wants to rollout new product bundles with several pricing options. Pricing options include product-price bundles, account specific pricing and more. Which product satisfies the needs: (choose 1)
+a) Custom Appexchange-app for product-pricing
+b) Workflow on Opportunity/Opportunity Product
+c) Formula fields on Opportunity/Opportunity Product
+d) Lightning process builder
+
+5 Which components can be added to a lightning app on custom Object: (choose 3)
+a) Visualforce
+b) Standard Lightning component
+c) Custom lightning component
+d) global actions
+e) object specific actions on the custom object
+
+6 Object specific actions can not be added. Visualforce need to be embedded into a Ligthning page.
+Universal containers has a custom object “service” which has a lookup relationship to Account. Universal containers wants to enhance Salesforce1 with an action that allows account managers to enter a new service to an Account while looking at the account. (Choose one):
+a) enter a object specific action to Account and put it in the Account Layout
+b) enter a object specific action to Service and put it in the Account Layout
+c) enter a object specific action to Service and put it in the Service Layout
+d) enter a object specific action to Account and put it in the Service Layout
+
+7 Universal containers has included its orders as an external data object into Salesforce. You want to create a relationship between Accounts and the Orders object (one-to-many relationship) leveraging a key field for account which is on both external object and Account. Which relationship do you create:
+a) Lookup Relationship
+b) Master Detail Relationship
+c) Hierarchical Relationship
+d) external Lookup Relationship
+e) indirect Lookup Relationship
+
+8 Universal containers has a custom object that has a N:M relationship with opportunityLineItem carrying price and amount information. In order to compute total amounts and total prices per Opportunity using Rollup summary fields, what field type will you use (choose one)
+a) Junction
+b) Master-Detail
+c) Lookup
+d) Crossobject
+
+9Universal Container want to store an area code and wants to be able to search for it in searches. Which are possible fields to store the data (choose 2):
+a) Text
+b) Phone
+c) Email
+d) Multi Picklist
+
+10Universal Container want to store an area code and wants to be able to search for it in applications (apex). Which are possible fields to store the data (choose 2):
+a) Text
+b) Phone
+c) Email
+d) Multi Picklist
+e) Number
+
+11Universal Container installes an unmanaged package. Which of the following are true: (choose 2):
+a) Components of unmanaged packages can be edited
+b) Unmanaged packages can be upgraded
+c) Unmanaged packages have a namespace prefix
+d) Unmanaged packages don’t have a version number
+e) Tests are executed during deployment
+
+12Universal Container is using assigment rules to distribute cases to regional teams. Which of the following are true: (choose 1):
+a) it is possible to have multiple active assigment rules
+b) cases may be assigned to public groups (if configured)
+c) cases may be assigned to queues (if configured)
+d) a workflow field update can be used instead
+
+13Field type conversion. Which of the following are true: (choose 2):
+a) data can be lost when converting from simple picklist to multi picklist
+b) data can be lost when converting from autonumber to text
+c) data can be lost when converting from number to currency (assuming that field lenghts are identical)
+d) information can be lost when converting from text area (rich) to text area (long)
+
+—
+Update 4th September: Thanks for all the encouraging feedback. It seems that developers worldwide are struggling with this exam and everyone is very warm and positive about finding some hints published. Please be so kind to email me your questions (I will confirm linkedIn contacts).
+—
+
+Find the general introduction here: Salesforce Certified App Builder Exam – Part 0
+
+Klaus Tulipan
+
+
+View Klaus Tulipan's profile on LinkedIn
+
+
+Index
+
+1 b)
+2 a) b) or d) see below
+3 a) c)
+4 d) (or a) ??)
+5 b) c) d)
+6 a)
+7 e)
+8 b) or a) depending on wording see below
+9 a) b)
+10 a) e) (after creating an index on the number field)
+11 a) d)
+12 c)
+13 b) d) 
+
+Question 2: lightning connector: The wording of this question was kind of strange and I had to read the text several times, and still did’t get how answers and question would match. The fact is that you have to specify an URL (text field), and you have to press the “validate and sync” to make the data available. In order to make the results searchable you have to choose the “include in Salesforce searches field”. So in other words there are 3 candidates for correct answer (URL, Search index and Button), while the other answers are nonsense. However, only 2 correct answers expected, and it depends on the exact wording/answer phrase which one is correct. Please read the question carefully and make the choice according to the exact wording. For example, if the question is “which data do you have to enter” then you can’t choose the button as a correct answer, because this is no data entry and “URL” is a good answer. If the question is “what do you have to do before you can use the data” and the answers are “URL”, “include in search fields” and “press validate and sync” then the anser “URL” is kind of strange. The next one who takes this exam please give feedback on the exact wording.
+
+Question 5: Answer a) is wrong because Visualforce can only be added into a lightning component, not directly into a lightning page. Lightning components can embed fliter lists, recent items, rich text, visualforce and report charts. A lightning page (built by the app builder) contains lightning components and global actions. A lightning page is what you build with the app builder. Instead of adding a component into a lightning page, components with the force:appHostable interface can be directly integrated into lightning compontent tabs, same like visualforce can be integrated into visualforce tabs, with “available for Salesforce mobile apps”. Winter 16 with lightning experience is adding much more possiblieites to this- the developer console can be used to develop lightning x apps and components with the aura framework:
+
+lightningComponentDevelopment
+
+Question 8: relationship: correct is b) but it depends on the exact wording. If they ask for field type, then b) is correct. If they ask for relationship type then a) would be correct.
+
+Question 9,10: indexes: SOSL uses name, phone, text for search. Some standard picklists seem to be included in search, but generally picklists are not. (maybe via support, I didn’t elaborate on this). External Id (index) can be created on text, number and email. Phone is not an external Id field. SOSL does not work on multi-picklist.
+
+Question 13: see https://help.salesforce.com/HTViewHelpDoc?id=notes_on_changing_custom_field_types.htm&language=en_US the online help is not very precise when it comes to conversion of number, percentage and currency into each other. When multi currency is enabled and you convert currency into number (of same format), you loose the currency information. If you convert the other way you won’t. A simple number to currency conversion with identical field length does not loose information.
+
+Converting a text field of more than 30 characters into autonumber is not possible
+______________________________________________________________________________________________________
+
+
+

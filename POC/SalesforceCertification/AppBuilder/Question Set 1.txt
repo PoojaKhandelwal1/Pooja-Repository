@@ -1,0 +1,291 @@
+1. UV containers need to add an additional recipient to workflow email alert that is fired from the case object. What type of field could be added to the case object to allow the additional desired recipient on the email alert? Select 2 options.
+a. Text field
+b. Email field
+c. Lookup field
+d. Formula field
+
+ANS : B, C
+
+2. UVC would like to use a chatter group for their mergers and acquisitions team to collaborate on potential new projects. this group should not be visible for non-members to see or join , and can be accessed by invite only
+3. Which chatter group type should the app builder recommend?
+a. Private group
+b. Unlisted group
+c. Public group
+d. Member group
+Ans : B Unlisted Group.
+4. UVC is rolling out a new customer service process. Customer service managers will need to edit cases for their subordinates, But not cases for other groups, managers and users should be able to view all cases
+What is the recommended solution to configure this ? select 2.
+a. Create standard role hierarchies.
+b. Set organization-wide sharing defaults to public read/only
+c. Create criteria based sharing rules
+d. Set organization wide sharing defaults to private
+Ans : B, A.
+
+5. UVC has deployed custom tabs through change sets, without including the profiles , to production.
+Which statement is true regarding to the visibility of custom tabs ?
+a. Custom tabs are default off for all the users.
+b. Custom tabs are hidden for all users
+c. Custom tabs are exposed for all users
+d. Custom tabs are default on for all the users
+Ans : A
+6. UVC, multiple departments utilize the case object for different purposes. Some users submit cases for IT and HR request. Other users provide customer support with case records.
+How can an app builder enable different users to see different fields, based on the case type ?
+a. Create different case field sets for IT,HR and customer support. Assign different fields sets by profile
+b. Create different case field sets for IT,HR and customer support. Assign different field sets by role
+c. Create different case record types for IT, HR, and Customer support, Assign different page layouts to each record type by profile.
+d. Create different case record types for IT, HR, and Customer support. Assign different page layouts to each record type by role.
+Ans : C
+7. What is a use case for approval processes? Select 2
+
+a. Approve expanse reports automatically when less than $50.
+b. Update the PTO record field with the user’s manager.
+c. Require CFO to review the salary range for all job offers
+d. Ensure an opportunity has at least one product added.
+Ans : A, C
+8. UVC has a custom assessment object used by three divisions. Each division wants to track different information on the assessments, including different values for the status picklist. Division managers do not want their teams to be able to create another division’s assessment.
+How to accomplish. ?
+a. Create separate assessment record types for each division and use them to limit picklist values. Create separate page layout s for each record type and use profiles to restrict record type access.
+b. Create three pages layout to determine the fields and picklist values for each user based on the division indicated on their user record. Use field level security to restrict access to division’s fields.
+c. Create a separate page layout for each division and assign them using profiles. Use the profile settings to configure each division’s custom field list and picklist values for assessments.
+d. Create additional custom assessment objects, one for each division, to track their assessment so information can be tracked separately. Use profiles to restrict access to the three custom objects.
+Ans : A
+9. UVC needs the ability to generate contract documents. All the data required for a contract resides in a custom object /
+What is the recommend solution?
+a. Enable the contracts feature and create a custom contract template based on the standard template.
+b. Create the HTML template for contract and store it in the public folder.
+c. Select and install an AppExchange product to meet the contract generation needs.
+d. Store a template in the static resources and configure the action link template to use it.
+Ans : A
+10. A customer support manager at UVC would like to implement call scripting for their call center agents. What automation tool can be used to accomplish this?
+a. Lighting process builder
+b. Workflow
+c. Visual workflow
+d. Lighting connect
+Ans : A
+11. UVC uses a custom object to track site visits, When the status of a site visit is changed from “in process ” to “On hold ” the business wants the site visit owner to be automatically assigned to an “On hold ” Queue. Which capability can be used to accomplish this .
+a. Assignment rule
+b. Action
+c. Visual workflow
+d. Apex Trigger
+Ans : Assignment rule
+12. What is a section of the lighting app builder tool ? select 3
+a. Canvas
+b. Selected publisher actions
+c. Mini page layout
+d. Mobile card
+e. Components
+Ans : A, D, E.
+13. UVC is importing 1000 records into salesforce . They want to avoid any duplicate records from being created during the import.
+How can these requirement be met ?
+a. After importing all of the custom objects , run a duplicate check report, export the report to CSV file and run a mass delete to purge any duplicates.
+b. When importing the file , select the “prevent Duplicates” option on the last step of the import wizard and import the file.
+c. Include a column in the import file that has either record names, Salesforce ID’s , or external IDs that can be used to match records
+d. After importing all of the custom objects, review all records created and manually merge any duplicate records.
+Ans : C
+
+14. UVC has separate business requirements for consumer and business opportunities. The sales team works both of opportunities. The app builder created two record types on the Opportunity object. What action can be performed ? select 2.
+a. Create unique opportunity stages by sales process
+b. Specify a different page layout by sales process.
+c. Enable field validation by sale process.
+d. Prevent access to secure data fields by sales process.
+
+Ans : B, C.
+
+15. Which statement is true for embedding a visual force page in a page layout select 2
+a. Visualforce pages on a field set have attributes for width and height.
+b. Visualforce pages on a page layout have attributes for width and height.
+c. Visualforce pages can only be places in the visual force section in the page layout
+d. Visualforce pages can be placed anywhere in a page layout.
+Ans : C, B
+16. What Is true statement regarding roll up summary fields Select 2 .
+a. Changes to the value of a roll up summary field can trigger assignment rules to run.
+b. The roll up summary field inherits the field level security of the child object.
+c. Roll up summary fields can only be created on the master of master-detail relationship.
+d. Multi select picklist files can be used in the field column of the field column of roll up summary filters.
+
+Ans : C , A
+
+17. UVC uses a custom object to track open job positions. They would like to automatically post updates on a record’s feed whenever a position stage is changed. Which social feature can be used to accomplish this.
+a. Workflow rule.
+b. Feed tracking.
+c. Feed quick Action
+d. Auto response rule.
+
+Ans : B
+
+18. Which capability allows an app builder to grant object level access ? Select 2.
+a. Assigning a user a permission set that allows for read and Edit access to an object
+b. Assigning a user a public group that allows for read and edit access to an object.
+c. Assigning a user a role that allows read access to an object.
+d. Assigning a user a profile that allows read access to an object.
+
+Ans : D, A.
+
+19. A junction object has two master detail relationships.
+What happens to junction object when either associated master record is deleted ?
+a. The look up field on the junction object is cleared.
+b. The master record can’t be deleted if has a child record
+c. The record is deleted and placed in the recycle bin.
+d. The record is permanently deleted and can’t be restored.
+
+Ans : C
+
+Junction object records are deleted when either associated master record is deleted and placed in the Recycle Bin. If both associated master records are deleted, the junction object record is deleted permanently and can’t be restored.
+
+20. The customer service at universal containers uses a project object to track their customer projects. An app builder needs to create a relationship between the project object and related client account record. A private sharing model is in place for both accounts and projects.
+Which statement is true when creating an account lookup field on the project object. Select 2.
+a. The account record can include roll up summary field with data from the project records.
+b. Users can only delete accounts in they have access to related project records.
+c. The account lookup field on the project record can be made optional.
+d. Cross object field updates between the project and account records are not supported.
+Ans :
+21. UVC has a junction object called invoice with primary master-detail relationship with accounts and a secondary master detail relationship with contacts. The app builder has requirement to change the primary master relationship to lookup . What happens to the master detail relationship with contacts.
+a. The contacts master detail field is deleted from the object.
+b. The contacts master detail becomes the primary
+c. The contacts master detail values are cleared from invoice.
+d. The contacts master detail also converts to lookup.
+ANS :
+22. What is the capability of sand box template ? Select 2.
+a. Specify the data range for data being replicated in a partial copy sandbox environment.
+b. Save a template for re-use when creating a partial copy sandbox environment.
+c. Specify the objects whose data should be replicated in the partial copy sandbox environment.
+d. Create a partial copy sandbox from a partial copy sandboxes environment.
+Ans : B,C
+
+23. What is the capability of schema builder ? select 2.
+a. Editing custom settings
+b. Creating a new record type.
+c. Viewing page layouts in a new window.
+d. Showing selected objects on a page.
+Ans : D,C
+24. Which setting is available to customize salesforce1 mobile app for branding ? Select 3.
+a. Header and search bar color.
+b. Action bar color.
+c. Background color on loading page.
+d. Notification and search icon
+e. The image on loading page.
+Ans : A,C,E
+25. Users at UVC need to be able to quickly create a contract record from the account record’s chatter feed. How should the app builder enable this functionality ?
+a. By creating a custom “Create a record” action on the account.
+b. By creating a custom “Detail page ” Button on the account.
+c. By creating a custom “Create a record” Action on the contract.
+d. By creating a custom “Detail page” Button on the contract.
+
+Ans : A
+
+26. Which statement is true about an external ID field ? Select 2.
+a. The field must contain at least one number and at least one letter.
+b. The field must be unique since duplicates are not allowed within salesforce.
+c. The field can be unique based on case-sensitive or case-insensitive values.
+d. The field contains unique record identifiers from a system outside of salesforce.
+Ans : B, C
+27. When a user creates an account report, the user does not see industry as an available field in the report builder. However, this same user is able to see in the account page layout.
+What scenario would cause this?
+a. The industry field is not enabled for the particular record type.
+b. The user does not have industry field visibility in the field level security.
+c. The industry field has no record values in the account.
+d. The user uses a custom report type which does not include the industry field.
+
+Ans : D
+28. UVC wants to display a message when a cause follow up. What can be used to display different text on the case record depending on the number of days a case is opened
+a. Formula field
+b. Workflow update
+c. Case process
+d. Lighting process builder
+Ans : A
+Where can a custom button be placed? Select 3 .
+A. On a related list.
+B. On a custom list view.
+C. On the user object.
+D. On the person account.
+E. On a web-to-case form.
+Ans : A,B,D
+Q. In Order to delete Opportunities, UVC would like sales reps to submit requests for approval from their sales manager.
+What can be used to meet Requirement?
+a. Approval process with Apex Trigger.
+b. Approval process with Time –Dependent workflow action.
+c. Process Builder with submit for approval action
+d. Two-step Approval process.
+Ans : D
+A divisional manager wants to add a report chart into a page layout. Which report format can be used as the source report to accomplish this ? Select 2
+a. Matrix format with chart.
+b. Summary format with a chart.
+c. Tabular format with a chart.
+d. Joined format with a chart.
+Ans : A , B
+Q. UVC wants to standardize their business logic. They want to ensure that workflow order is guaranteed to the same each time. Which feature can be used to accomplish this? Select 2.
+a. Workflow
+b. Lighting process builder
+c. Chatter actions
+d. Visual workflow
+Ans : B,D
+Q. Which values must be defined when creating a new Opportunity stage? Select 3
+a. Close date
+b. Type
+c. Forcast category
+d. probability
+E. Amount.
+
+ANS : B,C,D
+
+Q. UVC provides access to salesforce for their sales, service and marketing teams, Manager want to ensure that when users log in, Their home tab provide access to links and documention that are specifically relevant to their job function. How to this requirement be met?
+a. Create separate home page and custom components and layouts; Assign to users by profile.
+b. Expose specific elements within a home page custom component determined by role.
+c. . Create separate home page and custom components and layouts; Assign to users by role.
+d. Expose specific elements within a home page custom component determined by Profile.
+Ans : A
+What is a feature that can extend record access beyond the Organization wide defaults?
+a. Critiria based sharing rules
+b. Owner based sharing rules
+c. Dynamic role hierarchy.
+d. Public or private groups.
+Ans : A
+Q. UVC wants to provide a different view for its users when they access an account record in salesforce1 instead of in the standard wed version. How can this accomplished? Select 2.
+a. By adding Quick actions in the publisher section.
+b. By adding actions in the salesforce1 action bar section.
+c. By adding a mobile layout and assigning it to a profile.
+d. By adding visualforce pages to the mobile cards section.
+Ans : B, C
+The app builder at UVC has been asked to ensure that the amount field is populated when the stage is set to closed won.
+What can be used to meet this requirement?
+a. Validation rule
+b. Approval process
+c. Lighing process builder
+d. Work flow
+
+Q. What type of field can be used to filter a report chart that has been added to page Layout?
+a. Formula field
+b.Name field
+c. Standard field
+d.Matching ID field.
+
+Ans : D MatchingID.
+29. To synchronize accounts, orders, and shipments in real time, a developer has built a custom interface between an external system and salesforce. Prior to deployment, the developer needs to confirm that the interface can sustain the syncing of thousands of records at a time. Which sandbox environment is recommended to complete performance and load testing.
+a. Full sandbox
+b. Partial sandbox
+c. Developer sandbox
+d. Developer pro sandbox
+Ans: Full sandbox. A
+30. An app builder has created a report for salespeople to view records from a custom object. Someone complained they are unable to see all of the appropriate records. What steps should be taken to ensure data visibility within the report? Select 3.
+a. Check the user’s profile for object settings
+b. Check organization-wide defaults
+c. Check report filters
+d. Check the report folder sharing settings.
+e. Check sharing rules.
+Ans : A,B,C
+
+31.
+A custom object named assignment has a private sharing setting that grants access using hierarchies. The organization has a role hierarchy where the “Specialist” role reports to a “Manager” role which reports to a “Director” role. The Director role is at the top of the role hierarchy. A user who is in the manager role create a new assignment record. Who can see this record?
+a. The record owner and the directors in their Hierarchy.
+b. The record owner and the managers in their hierarchy.
+c. The record owner and those above the specialist role in their hierarchy.
+d. The record owner and the specialists in their hierarchy.
+ANS : A
+40. Which must be defined when creating a new Opportunity Stage ? slect 3
+a. Closed date
+b.Type
+c.Forecast category
+D. Probability
+E. Amount.
+
+B,C,D

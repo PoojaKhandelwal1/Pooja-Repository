@@ -1,0 +1,42 @@
+NOte: 8-10 questions came out of the dumps
+Q1) Developer can build a managed package in (A)
+A: Developer Edition
+B: Developer Sandbox
+C: Unlimited Edition
+D: Partial Copy Sandbox
+
+Q2) Valid way of loading external javascript files into a VisualForce page. Choose 2 answers (B, D)
+A: using an <apex:define> tag
+B: using a <script> tag 
+C: using a <link> tag
+D: using an <apex:includeScript> tag
+
+Q3) Developer to determine if a CustomObject__c record has been manually shared with current user in Apex  (D)
+A: by calling the profile settings of current user
+B: by calling isShared() method for the record
+C: by querying the role hierarchy
+D: by querying CustomObject__Share
+
+Q4) Benefits of Lightning Component Framework (C)
+A: better integration with Force.com sites
+B: more centralized control vis server-side logic
+C: more pre-built component to replicate SalesForce look and feel
+D: better performance for custom SalesForce1 mobile apps
+
+Q5) Capability of Developer Console (C)
+A: Execute anonymous apex code, Run REST API, Create/Edit code
+B: Execute anonymous apex code, Create/Edit code, Deploy code changes
+C: Execute anonymous apex code, Create/Edit code, View Debug Logs
+D: Execute anonymous apex code, Run REST API, Deploy code changes
+
+Q6) Preferred way to load the test data into SalesForce that sufficient test coverage for Apex method that interacts with Account (D)
+A: by using HTTPCalloutMocks
+B: by using WebServicesTests
+C: by using Documents
+D: by using Static Resource
+
+Q7) Which trigger event allows a developer to update fields in the Trigger.new list without using an additional DML statements. Choose 2 answers (A,B)
+A: before insert
+B: before update
+C: after insert
+D: after update

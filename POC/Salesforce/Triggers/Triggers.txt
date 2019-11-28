@@ -1,0 +1,11 @@
+1. Triggers
+2. Triggers default variables:-
+   Trigger.new;
+   Trigger.old;
+   Trigger.newMap;
+   Trigger.oldMap;
+3. Always handeled in bulk (list of records)
+4. addError 
+5. Create triggers for custom objects from salesforce: 
+	a.) create custom object and its fields.
+	b.) then clk on that object and here you find the option to crate trigger for that object.

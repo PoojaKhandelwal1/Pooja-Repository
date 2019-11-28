@@ -1,0 +1,16 @@
+trigger COUTrigger on COU__c (before insert, after insert, before update, after update) {
+    
+    PartTriggerHelper.COUNewList = Trigger.new;
+    PartTriggerHelper.COUOldList = Trigger.old;
+    PartTriggerHelper.COUNewMap = Trigger.newMap;
+    PartTriggerHelper.COUOldMap = Trigger.oldMap;
+    
+    if(Trigger.isBefore) {
+        if(Trigger.isInsert) {
+            COUTriggerHelper.createCOUNewMap();
+        } 
+    }
+    
+    
+    
+}

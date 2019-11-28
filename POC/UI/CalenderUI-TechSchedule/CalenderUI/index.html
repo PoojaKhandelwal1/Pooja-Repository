@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">	
+    <title>Calender</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">	
+	<link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+		<img src="img/header.png">
+	</div>
+	<div class="content">  
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="sidebar">
+						<h2>Schedule</h2>
+						<button id="addNewButton" class="btn btn-primary" data-toggle="modal" data-target="#appointmentModal"><i class="fa fa-plus-circle"></i> NEW</button>
+						<ul class="calenderNavigation">
+							<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i></a></li>																								
+							<li class="weekName">August 2017</li>
+						</ul>
+						<table class="calenderTable">
+							<thead>
+								<tr>
+									<th>S</th>
+									<th>M</th>
+									<th>T</th>
+									<th>W</th>
+									<th>T</th>
+									<th>F</th>
+									<th>S</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="nonCurrentMonth">29</td>
+									<td class="nonCurrentMonth">30</td>
+									<td class="nonCurrentMonth">31</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+									<td>10</td>
+									<td>11</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td class="curWeek start">13</td>
+									<td class="curWeek">14</td>
+									<td class="today">15</td>
+									<td class="curWeek">16</td>
+									<td class="curWeek">17</td>
+									<td class="curWeek end">18</td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td>20</td>
+									<td>21</td>
+									<td>22</td>
+									<td>23</td>
+									<td>24</td>
+									<td>25</td>
+								</tr>
+								<tr>
+									<td>26</td>
+									<td>27</td>
+									<td>28</td>
+									<td>29</td>
+									<td>30</td>
+									<td>31</td>
+									<td class="nonCurrentMonth">1</td>
+								</tr>								
+							</thead>							
+						</table>
+						<table class="calenderFilter">
+							<tbody>
+								<tr>
+									<td class="all">View all</td>
+									<td><img src="img/switched.png"></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="empty"></td>
+								</tr>								
+								<tr>
+									<td class="appointents">Appointments</td>
+									<td><img src="img/switch.png"></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="empty"></td>
+								</tr>								
+								<tr>
+									<td class="appointmentsWithSerice">Appointments with service</td>
+									<td><img src="img/switch.png"></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="empty"></td>
+								</tr>								
+								<tr>
+									<td class="reminders">Reminders</td>
+									<td><img src="img/switch.png"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-sm-10 removeLeftPadding">
+					<div class="calenderArea">
+						<div class="calenderHeader">
+							<div class="row">
+								<div class="col-sm-6">
+									<ul class="calenderNavigation">
+										<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+										<li><a href="#"><i class="fa fa-angle-right"></i></a></li>										
+										<li class="weekName">August 13 - August 18, 2017</li>																				
+									</ul>
+								</div>
+								<div class="col-sm-6">
+									<ul class="calenderChanger pull-right">
+										<li><a href="#">Day</a></li>
+										<li class="active"><a href="#">Week</a></li>										
+										<li><a href="#">Month</a></li>																					
+										<li><a href="#">3 Days</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="calenderDetail">
+							<table class="table calenderWeekTable">
+								<thead>
+									<tr>
+										<th class="time">&nbsp;</th>									
+										<th>MONDAY 13</th>
+										<th>TUESDAY 14</th>
+										<th class="today">WEDNESDAY 15</th>
+										<th>THURSDAY 16</th>
+										<th>FRIDAY 17</th>
+										<th>SATURDAY 18</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="time"><span>08 AM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td colspan="3"><p class="longAppointment"><strong>Service delivery for John Thomas</strong>Customer Pay</p></td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>09 AM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>10 AM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today"><p class="appointmentWithService"><strong>Amanda Jones Service</strong>100K Service</p>
+											<div id="appointmentWithServicePopover" class="popOver">
+												<div class="appointmentWithServicePreview">
+													<div class="popOverHeader">
+														<button class="btn-transparent btn-closePopover"><span aria-hidden="true">&times;</span></button>
+													</div>													
+													<div class="dateTime">15/08/2017 - 10AM-10.30AM</div>
+													<div class="title">Bob’s 5K service</div>
+													<div class="desc">Flat battery, new tyres</div>
+													<div class="customerInfo">Customer: Amanda Jones<br>CO# 00005721</div>
+													<button class="btn-transparent btn-viewServiceJobDetails"><i class="fa fa-wrench" aria-hidden="true"></i>VIEW SERVICE JOB DETAILS</button>
+													<div class="popOverFooter">
+														<button class="btn-transparent btn-delete"><i class="fa fa-trash-o" aria-hidden="true"></i>DELETE</button>
+														<button class="btn-primary btn-edit pull-right">EDIT</button>
+													</div>	
+												</div>
+												<div class="appointmentWithServiceDetails">
+													<div class="popOverHeader">
+														<button class="btn-transparent btn-viewServiceJobPreview pull-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>													
+														<button class="btn-transparent btn-closePopover"><span aria-hidden="true">&times;</span></button>
+													</div>												
+													<div class="customerInfo">Customer: Amanda Jones<br>CO# 00005721</div>
+													<ul class="serviceListBox">
+														<li><strong>Service 1</strong></li>
+														<li>Unit: 2015 Harley-Davidson UltraGlide XL</li>
+														<li>Job Type: Customer Pay</li>
+														<li>Job Status: In progress</li>
+														<li>Service Need: Oil Change</li>
+													</ul>
+													<ul class="serviceListBox">
+														<li><strong>Service 2</strong></li>
+														<li>Unit: 2015 Harley-Davidson UltraGlide XL</li>
+														<li>Job Type: Internal</li>
+														<li>Job Status: New</li>
+														<li>Service Need: Replace windshield</li>
+													</ul>
+												</div>
+											</div>										
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>11 AM</span></td>
+										<td><p class="reminder"><strong>Reminder</strong>Call Boris Spencer 0433 459 033</p></td>
+										<td>&nbsp;</td>
+										<td class="today"><p class="currentTime"></p></td>
+										<td>&nbsp;</td>
+										<td rowspan="2"><p class="appointment"><strong>5 Appointments</strong>Tap to view details</p>
+											<div class="popOver multipleAppointmentsPopover">
+												<div class="appointmentPreview">
+													<div class="popOverHeader">
+														<button class="btn-transparent btn-closePopover"><span aria-hidden="true">&times;</span></button>
+													</div>													
+													<ul class="appointmentList">
+														<li>
+															<p><strong>Tonny Newman</strong></p>
+															<p>Customer pay<br>Replacing (unit name)</p>
+														</li>
+														<li>
+															<p><strong>Replace and service</strong></p>
+															<p>Customer pay<br>Replace and service unit for John Citizen</p>
+														</li>
+														<li>
+															<p><strong>Customer coming in for a Service</strong></p>
+															<p>Third Party Pay<br>(No notes)</p>
+														</li>
+														<li>
+															<p><strong>Pieter Tiel</strong></p>
+															<p>Internal<br/>Service manager to review</p>
+														</li>
+														<li>
+															<p><strong>Tonny Newman</strong></p>
+															<p>Customer pay<br>Don's RV needs looking at as well as looking at his paperwork for...</p>
+														</li>														
+													</ul>	
+												</div>
+												<div class="appointmentDetails">
+													<div class="popOverHeader">
+														<button class="btn-transparent btn-appointmentPreview pull-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>													
+														<button class="btn-transparent btn-closePopover"><span aria-hidden="true">&times;</span></button>
+													</div>												
+													<div class="dateTime">17/08/2017 - 11AM-12PM</div>
+													<div class="customerInfo">Tonny Newman</div>
+													<div class="desc">Customer pay<br/>Don’s RV needs looking at as well as looking at his paperwork for lorem ipsum dolor sit amet</div>
+													<button class="btn-transparent btn-addServiceJob"><i class="fa fa-wrench" aria-hidden="true"></i>ADD SERVICE JOB</button>
+													<div class="popOverFooter">
+														<button class="btn-transparent btn-delete"><i class="fa fa-trash-o" aria-hidden="true"></i>DELETE</button>
+														<button class="btn-primary btn-edit pull-right">EDIT</button>
+													</div>													
+												</div>
+											</div>
+										</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>12 AM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>01 PM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today" rowspan="2"><p class="appointment"><strong>Bob's 5K Service</strong>Flat battery, new tyres</p>
+											<div id="appointmentPopover" class="popOver">
+												<div class="appointmentPreview">
+													<div class="popOverHeader">
+														<button class="btn-transparent btn-closePopover"><span aria-hidden="true">&times;</span></button>
+													</div>													
+													<div class="dateTime">15/08/2017 - 1PM-2PM</div>
+													<div class="title">Bob’s 5K service</div>
+													<div class="desc">Flat battery, new tyres</div>
+													<button class="btn-transparent btn-addServiceJob"><i class="fa fa-wrench" aria-hidden="true"></i>ADD SERVICE JOB</button>
+													<div class="popOverFooter">
+														<button class="btn-transparent btn-delete"><i class="fa fa-trash-o" aria-hidden="true"></i>DELETE</button>
+														<button class="btn-primary btn-edit pull-right">EDIT</button>
+													</div>	
+												</div>
+											</div>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>02 PM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>03 PM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td rowspan="2" class="multipleAppointments">
+											<table>
+												<tr>
+													<td><p class="appointment"><strong>John...</strong>Internal Check sy</p></td>
+													<td><p class="appointment"><strong>Bob...</strong>Internal Check sy</p></td>
+													<td><p class="appointment"><strong>Time...</strong>Internal Check sy</p></td>
+												</tr>
+											</table>
+										</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>04 PM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>05 PM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time"><span>06 PM</span></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="time">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td class="today">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>									
+								</tbody>								
+							</table>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="appointmentModalLabel"><span class="selected">Appointment</span><span>Reminder</span></h4>
+		  </div>
+		  <div class="modal-body">
+			<form>
+			  <div class="form-group">
+				<input type="text" class="appointmentTitle form-control" placeholder="Appointment Title">
+			  </div>
+			  <div class="form-group">
+				<label for="fromDate">From</label>
+				<div class="row">
+					<div class="col-sm-6"><input type="text" class="form-control" id="fromDate" value="15/08/2017"></div>
+					<div class="col-sm-6"><input type="text" class="form-control" id="fromTime" value="09:30am"></div>					
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="fromDate">To</label>
+				<div class="row">
+					<div class="col-sm-6"><input type="text" class="form-control" id="toDate" value="15/08/2017"></div>
+					<div class="col-sm-6"><input type="text" class="form-control" id="toTime" value="09:30am"></div>					
+				</div>
+			  </div>
+			  <div class="form-group">
+				<textarea class="form-control" placeholder="Additional notes"></textarea>
+			  </div>
+			</form>
+			<button class="btn-transparent btn-addServiceJob mar-bot-20"><i class="fa fa-wrench" aria-hidden="true"></i>ADD SERVICE JOB</button>
+		  </div>
+		  <div class="modal-footer">
+			<button class="btn-transparent btn-delete"><i class="fa fa-trash-o" aria-hidden="true"></i>DELETE APPOINTMENT</button>
+			<button type="button" class="btn btn-primary" data-dismiss="modal">CREATE</button>
+		  </div>
+		</div>
+	  </div>
+	</div>	
+	<script src="js/jquery-2.2.4.min.js"></script>		
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/script.js"></script>	
+  </body>
+</html>
