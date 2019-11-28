@@ -1,0 +1,55 @@
+global with sharing class QRReaderCtrl {
+    
+    public PageReference dotestpage(){
+    
+	    PageReference pageRef = new PageReference('/apex/QRScanner');
+	    pageRef.setRedirect(true);
+	    return pageRef;
+    
+    }
+    
+    @RemoteAction 
+    global static String getAccountInfoByAdharNo(String adharNo) {
+        adharNo = getDecodedString(adharNo); 
+        
+        List<Account> accounts = [select Id, Name, AdharNo__c, AmountDue__c, Phone__c From Account where AdharNo__c =: adharNo];
+        String JSONString = '{}';
+        if(accounts .size() > 0) {
+            JSONString = System.JSON.serialize(new AccountWrapper (accounts[0]));
+        }
+        return getEncodedString(JSONString);
+    }
+    
+    private static String getDecodedString(String str) {
+        if(String.isBlank(str)) {
+            return str;
+        }
+        return (EncodingUtil.base64Decode(str) != null) ? EncodingUtil.base64Decode(str).toString() : null;
+    }
+    
+    private static String getEncodedString(String str) {
+        if(String.isBlank(str)) {
+            return str;
+        }
+        return getEncodedStr(Blob.valueOf(str));
+    }
+    
+    private static String getEncodedStr(Blob blobStr) {
+        return EncodingUtil.base64Encode(blobStr);
+    }
+    
+    public class AccountWrapper {
+        public String Id;
+        public String Name;
+        public String AdharNo;
+        public Decimal AmountDue;
+        public String Phone;
+        public AccountWrapper(Account accountRec) {
+            this.Id = accountRec.Id;
+            this.Name = accountRec.Name;
+            this.AdharNo = accountRec.AdharNo__c;
+            this.AmountDue = accountRec.AmountDue__c;
+            this.Phone = accountRec.Phone__c;
+        }
+    }
+}
